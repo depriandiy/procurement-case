@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 #[Fillable([
     'submission_id',
@@ -63,5 +64,10 @@ class SubmissionItem extends Model
     public function baseUnit(): BelongsTo
     {
         return $this->belongsTo(Unit::class, 'base_unit_id');
+    }
+
+    public function mappingHistories(): HasMany
+    {
+        return $this->hasMany(SubmissionItemMappingHistory::class);
     }
 }

@@ -48,4 +48,9 @@ class Supplier extends Model
     {
         return $this->hasMany(Submission::class);
     }
+
+    public function itemAliases(): HasMany
+    {
+        return $this->hasMany(ItemAlias::class);
+    }
 }

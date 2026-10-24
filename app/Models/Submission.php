@@ -77,4 +77,19 @@ class Submission extends Model
     {
         return $this->hasMany(SubmissionItem::class)->orderBy('line_no');
     }
+
+    public function statusHistories(): HasMany
+    {
+        return $this->hasMany(SubmissionStatusHistory::class);
+    }
+
+    public function followUps(): HasMany
+    {
+        return $this->hasMany(FollowUp::class);
+    }
+
+    public function supplierLinkHistories(): HasMany
+    {
+        return $this->hasMany(SubmissionSupplierLinkHistory::class);
+    }
 }
