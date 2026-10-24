@@ -18,7 +18,14 @@
         </include>
     </source>
     <php>
-        <env name="APP_ENV" value="testing"/>
+        <env name="APP_ENV" value="testing" force="true"/>
+        <env name="APP_KEY" value="base64:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" force="true"/>
+        <env name="APP_NAME" value="Portal Penawaran Supplier" force="true"/>
+        <env name="APP_URL" value="http://localhost:8000" force="true"/>
+        <env name="APP_TIMEZONE" value="Asia/Jakarta" force="true"/>
+        <env name="APP_LOCALE" value="id" force="true"/>
+        <env name="APP_FALLBACK_LOCALE" value="id" force="true"/>
+        <env name="APP_FAKER_LOCALE" value="id_ID" force="true"/>
         <env name="APP_MAINTENANCE_DRIVER" value="file"/>
         <env name="BCRYPT_ROUNDS" value="4"/>
         <env name="BROADCAST_CONNECTION" value="null"/>
