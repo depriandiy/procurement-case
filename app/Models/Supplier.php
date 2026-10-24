@@ -43,4 +43,9 @@ class Supplier extends Model
     {
         return $this->hasMany(SupplierContact::class);
     }
+
+    public function submissions(): HasMany
+    {
+        return $this->hasMany(Submission::class);
+    }
 }
