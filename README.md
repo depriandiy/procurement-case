@@ -42,7 +42,8 @@ Hentikan aplikasi dengan `docker compose down`. Opsi `--volumes` akan menghapus 
 
 - [Project brief dan requirement](docs/PROJECT-BRIEF.md)
 - [Arsitektur dan keputusan teknis](docs/architecture.md)
+- [Skema database dan relasi domain](docs/database-schema.md)
 - [Roadmap implementasi](docs/ROADMAP.md)
 - [PDF penugasan](docs/references/kdi-supplier-qr-assignment.pdf)
 
-Skema database domain, risiko keamanan, dan alur demo akan dilengkapi bersama phase implementasi terkait agar dokumentasi selalu sesuai dengan perilaku aplikasi.
+Risiko keamanan dan alur demo akan dilengkapi bersama phase implementasi terkait agar dokumentasi selalu sesuai dengan perilaku aplikasi.
