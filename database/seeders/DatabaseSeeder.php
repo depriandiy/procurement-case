@@ -15,6 +15,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call(DomainCatalogSeeder::class);
+
         User::query()->updateOrCreate(
             ['email' => 'test@example.com'],
             [
